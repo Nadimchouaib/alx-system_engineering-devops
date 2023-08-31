@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(ls -m)
+echo $(ls -mls -p -a | grep -E '/$|^[0-9A-Za-z]' | sort -k1,1 -t/ | tr '\n' ',' && echo)
