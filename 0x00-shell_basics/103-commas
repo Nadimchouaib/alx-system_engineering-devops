@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -p -a | grep -E '/$|^[0-9A-Za-z]' | sort -k1,1 -t/ | tr '\n' ',' | echo "$(cat -)"`
+(ls -ap | grep -E '/$|^[0-9A-Za-z]' | sort -k1,1 -t/ | tr '\n' ',') | cat
