@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -tU | head -n 10
+ls -lt | awk 'NR > 1 {print}' | head -n 10
